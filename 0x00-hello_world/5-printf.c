@@ -1,8 +1,11 @@
 #include <stdio.h>
+
 /**
- * main - main function
- * return - return with 0
+ * main - Entry point
+ *
+ * Return: returns 0 since function is void
  */
+
 int main(void)
 {
 	printf("%s", "with proper grammar, but the outcome is a piece of art,\n");
