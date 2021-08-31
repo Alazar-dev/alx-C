@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- *main -d
+ *main - d
  *Return: 0
  */
 
