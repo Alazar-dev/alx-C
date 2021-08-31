@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- *main - d
- *Return: 0
+ * main - d
+ * Return: 0
  */
 
 int main(void)
