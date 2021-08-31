@@ -1,7 +1,13 @@
 #include <stdio.h>
-
+  
 int main()
 {
- printf("Holberton\n");
- return 0;
+  
+    // Get the character to be written
+    char ch = 'G';
+  
+    // Write the Character to stdout
+    putchar(ch);
+  
+    return (0);
 }
