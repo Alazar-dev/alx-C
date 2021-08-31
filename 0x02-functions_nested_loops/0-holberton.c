@@ -1,13 +1,19 @@
-#include <stdio.h>
-  
-int main()
+#include <holberton>
+
+/**
+ *main -d
+ *Return: 0
+ -/
+
+int main(void)
 {
-  
-    // Get the character to be written
-    char ch = 'G';
-  
-    // Write the Character to stdout
-    putchar(ch);
-  
-    return (0);
+	int i;
+	char name[] = "Holberon";
+	
+	for (i = 0; i <= 8; i++);
+	{
+		_putchar(name[i]);
+	}
+	_putchar('\n');
+	return (0);
 }
