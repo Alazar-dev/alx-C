@@ -1,18 +1,19 @@
 #include "holberton.h"
-
 /**
- * main - d
+ * main - Entry block
+ * Description: prints holberton on new line
  * Return: 0
  */
-
 int main(void)
 {
-	int i;
-	char name[] = "Holberton";
+	char c[9] = "Holberton";
 
-	for (i = 0; i <= 8; i++)
+	int i = 0;
+
+	while (i < 9)
 	{
-		_putchar(name[i]);
+		_putchar(c[i]);
+		i++;
 	}
 	_putchar('\n');
 	return (0);
