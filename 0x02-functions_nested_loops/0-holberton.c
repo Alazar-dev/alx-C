@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include "_putchar.c"
 /**
  * main - Entry block
  * Description: prints holberton on new line
