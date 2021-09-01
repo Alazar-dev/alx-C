@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include "_putchar.c"
 /**
  * main - Entry block
  * Description: prints holberton on new line
@@ -6,7 +7,7 @@
  */
 int main(void)
 {
-	char c[9] = "Holberton";
+	char c[9] = "_putchar";
 
 	int i = 0;
 
