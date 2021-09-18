@@ -1,41 +1,28 @@
 #include "holberton.h"
 
 /**
-  * _atoi - change string to intiger
-  * @s: the given string
-  * Return: changed string (intiger)
-  */
+ * _atoi - converts strings to int
+ * @s: first parameter
+ *
+ * Description: takes all types of char
+ * Return: 0 for success
+ */
 
-int _atoi(char *s)
-{
-	int index, ind2;
-	unsigned int res;
-	int sign = 1;
-	char now;
+int _atoi(char *s) 
+{ 
+	int result, sign, i;
 
-	index = 0;
-	res = 0;
-	while (s[index] != '\0')
+	result = 0;
+	sign = 1; 
+	i = 0; 
+	if (s[0] == '-') { 
+		sign = -1; 
+
+		i++; 
+	} 
+	for (; s[i] != '\0'; ++i)
 	{
-		now = s[index];
-		if (now == '-')
-		{
-			sign *= -1;
-		}
-		if (now >= '0' && now <= '9')
-		{
-			ind2 = index;
-			while (s[ind2] > 47 && s[ind2] < 58)
-			{
-				res = (res * 10) + s[ind2] - '0';
-				ind2++;
-			}
-			break;
-		}
-		index++;
+		result = result * 10 + s[i] - '0'; 
 	}
-	if (sign < 0)
-		res *= sign;
-	return (res);
-
+	return (sign * result); 
 }

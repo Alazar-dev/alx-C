@@ -1,2 +1,2 @@
-Static libraries
-HOw to create
+# 0x09. C - Static libraries
+

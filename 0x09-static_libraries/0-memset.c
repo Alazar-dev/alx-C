@@ -1,19 +1,22 @@
 #include "holberton.h"
 
 /**
- * _memset - allocates c to memory.
- * @s: points to an array of characters.
- * @b: character to fill.
- * @n: how many adress to fill.
- * Return: a character.
+ * _memset - fill memory
+ * @s: input string
+ * @b: input character
+ * @n: input size
+ *
+ * Description: fills memory with a constant byte
+ * Return: returns a pointer to the memory area s
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i; /* looping var */
+	unsigned int i;
 
 	for (i = 0; i < n; i++)
+	{
 		s[i] = b;
-
+	}
 	return (s);
 }
