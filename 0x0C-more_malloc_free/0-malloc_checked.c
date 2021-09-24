@@ -1,25 +1,18 @@
 #include "holberton.h"
-#include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
+#include <stdio.h>
 /**
- *malloc_checked - unction that allocates memory using malloc.
- *@b: unsigned int
- *Return: VOID Pointer
+ * malloc_checked -  allocates memory using malloc
+ * @b: size of memory to be allocated.
+ *
+ * Return:pointer to the allocated memory
  */
 void *malloc_checked(unsigned int b)
 {
-/* We don't know the type of bytes that will*/
-/*occupy the allocated memory so we use VOID pointer type */
-	void *pointer;
+	void *ptr = malloc(b);
 
-/* Dynamic memory allocation using malloc function */
-	pointer = malloc(b);
+	if (ptr == NULL)
+		exit(98);
 
-/* if malloc fails to allocate the needed memory */
-	if (pointer == NULL)
-/* exit status value */
-	exit(98);
-/* the function return a pointer */
-	return (pointer);
+	return (ptr);
 }
